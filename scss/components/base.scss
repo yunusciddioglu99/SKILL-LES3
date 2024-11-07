@@ -1,0 +1,16 @@
+@use 'abstract/colors';
+@use 'abstract/mixin';
+
+*:focus{
+    outline: 0.2rem dashed colors.$dark;
+}
+
+.body{
+    background: colors.$gradient;
+    @include mixins.flexCenter;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 4rem;
+    font-family: 'Rubik', sans-serif;
+}
